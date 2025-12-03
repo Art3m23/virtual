@@ -728,19 +728,19 @@ body {
 }
 
 .classes_panel:first-child {
-  background-image: url(/images/class_1.jpg);
+  background-image: url(./images/class_1.jpg);
 }
 
 .classes_panel:nth-child(2) {
-  background-image: url(/images/class_2.jpg);
+  background-image: url(./images/class_2.jpg);
 }
 
 .classes_panel:nth-child(3) {
-  background-image: url(/images/class_3.jpg);
+  background-image: url(./images/class_3.jpg);
 }
 
 .classes_panel:last-child {
-  background-image: url(/images/class_4.jpg);
+  background-image: url(./images/class_4.jpg);
 }
 
 .panel_container {
@@ -906,19 +906,19 @@ body {
 }
 
 .distance_block:first-child {
-  background-image: url(/images/lections.png);
+  background-image: url(./images/lections.png);
 }
 
 .distance_block:nth-child(2) {
-  background-image: url(/images/games.png);
+  background-image: url(./images/games.png);
 }
 
 .distance_block:nth-child(3) {
-  background-image: url(/images/books.png);
+  background-image: url(./images/books.png);
 }
 
 .distance_block:last-child {
-  background-image: url(/images/trainings.png);
+  background-image: url(./images/trainings.png);
 }
 
 .distance_block-r {
@@ -1091,4 +1091,5 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #2f364f;
+
 }
