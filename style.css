@@ -114,7 +114,6 @@ body {
 }
 
 .start {
-  display: none;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -524,7 +523,7 @@ body {
 }
 
 .classroom {
-  /*display: none;*/
+  display: none;
   width: 100%;
   background-color: #FFEEC7;
   user-select: none;
@@ -1093,3 +1092,4 @@ body {
   color: #2f364f;
 
 }
+
