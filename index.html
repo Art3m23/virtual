@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Виртуальный кабинет</title>
+</head>
+
+<body>
+  <section class="start">
+    <div class="start_title-container">
+      <h2 class="start_school-name">средняя школа №2 г. Могилева</h2>
+      <h1 class="start_title-top start_text">виртуальный кабинет</h1>
+      <h1 class="start_title-bottom start_text">начальных классов</h1>
+      <button class="start_button">начать</button>
+    </div>
+  </section>
+  <section class="loader">
+    <div class="line">
+      <div class="pen">
+        <div class="pen_overlay"></div>
+        <div class="pen_top"></div>
+        <div class="pen_bottom"></div>
+      </div>
+    </div>
+    <p class="text">Сайт загружается... Пожалуйста подождите</p>
+  </section>
+  <section class="classroom">
+    <header class="classroom_header header">
+      <div class="header_logo"><img src="./images/logo.png" alt="logo" class="logo"></div>
+      <nav class="header_navbar navbar">
+        <ul class="navbar_container">
+          <li class="navbar_item active " data-index-number="0">Главная</li>
+          <li class="navbar_item" data-index-number="1">Нормативно-правовая база</li>
+          <li class="navbar_item" data-index-number="2">Олимпиадное движение</li>
+          <li class="navbar_item" data-index-number="3">Исследовательская деятельность</li>
+          <li class="navbar_item" data-index-number="4">Дистанционное обучение</li>
+          <li class="navbar_item" data-index-number="5">Учительские лайфхаки</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="classroom_title_container classroom_section">
+      <div class="classroom_title-text">
+        <h1 class="classroom_title title_text">виртуальный</h1>
+        <h1 class="classroom_title title_text">кабинет</h1>
+        <h1 class="classroom_title title_text">начальных</h1>
+        <h1 class="classroom_title title_text">классов</h1>
+      </div>
+      <img class="classroom_start-image" src="./images/school object.png" alt="school object">
+    </section>
+    <section class="classroom_standards standards classroom_section">
+      <div class="standards-menu menu">
+        <ul class="menu-items">
+          <li class="menu-item"><a target="_blank" href="https://pravo.by/document/?guid=3871&p0=Hk1100243"
+              class="menu-link">Кодекс об образовании</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://drive.google.com/file/d/1s2cP72lOlkehFoKTSjuFgn5PJyZ4-_yH/view" class="menu-link">Санитарные
+              нормы и правила</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/tipovye-uchebnye-plany-uchrezhdenij-obshchego-srednego-obrazovaniya.html"
+              class="menu-link">ТИПОВЫЕ УЧЕБНЫЕ ПЛАНЫ УЧРЕЖДЕНИЙ ОБЩЕГО СРЕДНЕГО ОБРАЗОВАНИЯ</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/instruktivno-metodicheskie-pisma.html"
+              class="menu-link">ИНСТРУКТИВНО-МЕТОДИЧЕСКИЕ ПИСЬМА</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/metodicheskie-rekomendatsii-ukazaniya.html"
+              class="menu-link">МЕТОДИЧЕСКИЕ РЕКОМЕНДАЦИИ, УКАЗАНИЯ</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/uchebnye-predmety-i-iv-klassy/i-klass.html"
+              class="menu-link">I КЛАСС</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/uchebnye-predmety-i-iv-klassy/ii-klass.html"
+              class="menu-link">II КЛАСС</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/uchebnye-predmety-i-iv-klassy/iii-klass.html"
+              class="menu-link">III КЛАСС</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/uchebnye-predmety-i-iv-klassy/iv-klass.html"
+              class="menu-link">IV КЛАСС</a></li>
+          <li class="menu-item"><a target="_blank"
+              href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/uchebnye-predmety-i-iv-klassy/uchebno-metodicheskie-kompleksy-fakultativnykh-zanyatij-po-formirovaniyu-funktsionalnoj-gramotnosti-uchashchikhsya-iii-iv-klassov.html"
+              class="menu-link">УЧЕБНО-МЕТОДИЧЕСКИЕ КОМПЛЕКСЫ ФАКУЛЬТАТИВНЫХ ЗАНЯТИЙ ПО ФОРМИРОВАНИЮ ФУНКЦИОНАЛЬНОЙ
+              ГРАМОТНОСТИ УЧАЩИХСЯ II–IV КЛАССОВ</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="classroom_olimpiads olimpiads classroom_section">
+      <img class="olimpiads_start-image" src="./images/olimpiads.png" alt="olimpiads">
+      <div class="olimpiads_classes classes">
+        <!--<div class="classes_panel panel classes_active">
+          <h3 class="class_title">I КЛАСС</h3>
+          <div class="panel_dark">
+          </div>
+          <div class="panel_container">
+            <h3>I КЛАСС</h3>
+            <ul class="olimpiads_subjects">
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1UQHmRbbYf1uGUIeu3BDVYKUdTDtTFWH1?usp=drive_link" class="olimpiads_link">Математика</a></li>
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1f-IussmCa2Z1rjGqKqW7TuUJTYPNkFfh?usp=sharing" class="olimpiads_link">Русский язык</a></li>
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/13IPBHOhQQgVS15_f6VEQEgVp-G8XOVK8?usp=sharing" class="olimpiads_link">Человек и Мир</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="classes_panel panel">
+          <h3 class="class_title">II КЛАСС</h3>
+          <div class="panel_dark">
+          </div>
+          <div class="panel_container">
+            <h3>II КЛАСС</h3>
+            <ul class="olimpiads_subjects">
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1igQmLiXnkdUN8FTMkFcqQUpla_hOIVQd?usp=sharing" class="olimpiads_link">Математика</a></li>
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1Kh5OnlseoV1FVeOHH51Cb7bp_lhdoSg3?usp=sharing" class="olimpiads_link">Русский язык</a></li>
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1Gz9UwJEs3Og7ANpqW_tCzq8MqXkoWcB5?usp=sharing" class="olimpiads_link">Белорусская мова</a></li>
+              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1H0bsU5TCUe1xy5e3L-qoW4IXA8FG6HfX?usp=sharing" class="olimpiads_link">Человек и Мир</a></li>
+            </ul>
+          </div>
+        </div>-->
+        <div class="classes_panel panel classes_active">
+          <h3 class="class_title">III КЛАСС</h3>
+          <div class="panel_dark">
+          </div>
+          <div class="panel_container">
+            <h3>III КЛАСС</h3>
+            <ul class="olimpiads_subjects">
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1w37cbtG0k9rM7QKv85uGz3meRoroIZXP?usp=sharing"
+                  class="olimpiads_link">Математика</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1x3gvmi-b17mHXGTEeacEyYLTE-q1Qzjk?usp=sharing"
+                  class="olimpiads_link">Русский язык</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1CkMV6K0istxybW7mRfySTzzXkxHSvYLy?usp=sharing"
+                  class="olimpiads_link">Белорусская мова</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1lOhS0y2OeCrcuxBZmuKa3S6QjZELhwpL?usp=sharing"
+                  class="olimpiads_link">Человек и Мир</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="classes_panel panel">
+          <h3 class="class_title">IV КЛАСС</h3>
+          <div class="panel_dark">
+          </div>
+          <div class="panel_container">
+            <h3>IV КЛАСС</h3>
+            <ul class="olimpiads_subjects">
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1Y7kK4feoe-QcjM4OMxqklvCvdphPxcG3?usp=sharing"
+                  class="olimpiads_link">Математика</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1krU3arhbiJs_W_eVjalOcAAo6dWhNcna?usp=sharing"
+                  class="olimpiads_link">Русский язык</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1CkMV6K0istxybW7mRfySTzzXkxHSvYLy?usp=sharing"
+                  class="olimpiads_link">Белорусская мова</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/190cRMEVuWKgB7iI70HUtl7wprh8ju6om?usp=sharing"
+                  class="olimpiads_link">Человек и Мир</a></li>
+              <li class="olimpiads_subject"><a target="_blank"
+                  href="https://drive.google.com/drive/folders/1k1_GjpmBY0iTaK5bXn7e3a9KDRua9mYq?usp=sharing"
+                  class="olimpiads_link">ОБЖ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="classroom_reaserches reaserches classroom_section">
+      <img class="reaserches_start-image" src="./images/reaserch.png" alt="reaserches">
+      <div class="reaserches_container">
+        <div class="reaserches_files files">
+          <a target="_blank"
+            href="https://docs.google.com/document/d/1aYyK9GUtQhCczKrC23_Fk_DK_asLteh-/edit?usp=drive_link&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">направления исследовательских работ</a>
+          <a target="_blank"
+            href="https://docs.google.com/document/d/1wadOMLGSa0OIncaQMthcz86GicP6uvt_/edit?usp=sharing&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">ОРГАНИЗАЦИЯ ИССЛЕДОВАТЕЛЬСКОЙ ДЕЯТЕЛЬНОСТИ</a>
+          <a target="_blank"
+            href="https://docs.google.com/document/d/12nlOwIhgjo9Uu-OPtK1iLkVvk4sercJ8/edit?usp=sharing&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">Основные этапы организации исследовательской деятельности</a>
+        </div>
+        <div class="reaserches_files files">
+          <a target="_blank"
+            href="https://docs.google.com/document/d/1cHxul63ejBWd_i_6N4IMxdqJBQLziOXT/edit?usp=sharing&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">ПАМЯТКА начинающему исследователю</a>
+          <a target="_blank"
+            href="https://docs.google.com/document/d/1918pdgFlCcSPDB9wAMu74AUWoaG_rDhF/edit?usp=sharing&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">Памятка для педагогов – руководителей проектов</a>
+          <a target="_blank"
+            href="https://docs.google.com/document/d/1UjRDpx2Ysu_ZfIrfueEFX_0vllNU8ubm/edit?usp=sharing&ouid=108032786375195285357&rtpof=true&sd=true"
+            class="files_item">СТРУКТУРА ИССЛЕДОВАТЕЛЬСКОЙ РАБОТЫ</a>
+        </div>
+      </div>
+    </section>
+    <section class="classroom_distance distance classroom_section">
+      <section class="distance_container">
+        <div class="distance_block block">
+          <h3 class="block_title">видеоролики</h3>
+          <div class="distance_block-r">
+            <p>обучающие видеоролики по предметам с Единого информационно-образовательного ресурса</p>
+            <a target="_blank" href="https://eior.by/obrazovanie/obshchee-srednee/index.php"
+              class="block_button">перейти</a>
+          </div>
+        </div>
+        <div class="distance_block">
+          <h3 class="block_title">игры</h3>
+          <div class="distance_block-r">
+            <p>обучающие игры по предметам начальной школы</p>
+            <a target="_blank" href="https://learningapps.org/index.php?overview&s=&category=0&tool="
+              class="block_button">перейти</a>
+          </div>
+        </div>
+        <div class="distance_block">
+          <h3 class="block_title">книги</h3>
+          <div class="distance_block-r">
+            <p>электронные версии книг начальной школы</p>
+            <a target="_blank" href="https://e-padruchnik.adu.by/" class="block_button">перейти</a>
+          </div>
+        </div>
+        <div class="distance_block">
+          <h3 class="block_title">тренажеры</h3>
+          <div class="distance_block-r">
+            <p>тренажеры по предмету математика начальной школы</p>
+            <a target="_blank" href="http://bi2o2t.ru/training/mathematics" class="block_button">перейти</a>
+          </div>
+        </div>
+      </section>
+      <!--<div class="name_video">Звонкие и глухие согласные звуки. Их обозначение на письме буквами. Парные и непарные
+        звонкие и глухие согласные. Произношение и обозначение на письме парных звонких и глухих согласных на конце слов
+        и в середине слов перед глухими согласными</div>
+      <video class="video" width="797px" height="480px"
+        src="https://eior.by/upload/info-oso/belmova/4class/БМР04_0203.mp4" controls poster="./images/belarus.jpg"></video>
+      <button class="button"></button>-->
+    </section>
+    <section class="classroom_lifehacks lifehacks classroom_section">
+      <img src="./images/notebook.png" alt="notebook">
+      <ol class="lifehacks_list">
+        <li class="lifehacks_item"><a href="" class="lifehacks_links">Использования QR-кодов в обучении школьников</a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links">Паутинка ассоциаций, кластер, интеллект-карта</a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links">Шестерёнка - заведи урок.</a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
+      </ol>
+    </section>
+    <section class="footer_container">
+      <footer class="classroom_footer footer">
+        <ul class="footer_contacts contacts">
+          <li class="contacts_item"><a target="_blank" href="https://t.me/school2mogilev" class="contacts_link"><img
+                src="./images/telegram_logo.png" alt="telegram" class="contacts_icon"></a></li>
+          <li class="contacts_item"><a target="_blank" href="https://www.instagram.com/school2_mogilev/"
+              class="contacts_link"><img src="./images/instagram_logo.png" alt="instagram" class="contacts_icon"></a>
+          </li>
+        </ul>
+        <p class="footer_school-name">Cредняя школа №2 г. Могилева, 2025 г.</p>
+      </footer>
+    </section>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
