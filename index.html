@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NO:wght@100..400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Виртуальный кабинет</title>
@@ -37,6 +37,20 @@
   <section class="classroom">
     <header class="classroom_header header">
       <div class="header_logo"><img src="./images/logo.png" alt="logo" class="logo"></div>
+      <div class="hamburger-menu">
+        <input id="menu_toggle" type="checkbox" />
+        <label class="menu_btn" for="menu_toggle">
+          <span></span>
+        </label>
+        <ul class="menu_container">
+          <li><a class="menu_item active"  data-index-number="0">Главная</a></li>
+          <li><a class="menu_item" data-index-number="1">Нормативно-правовая база</a></li>
+          <li><a class="menu_item" data-index-number="2">Олимпиадное движение</a></li>
+          <li><a class="menu_item" data-index-number="3">Исследовательская деятельность</a></li>
+          <li><a class="menu_item" data-index-number="4">Дистанционное обучение</a></li>
+          <li><a class="menu_item" data-index-number="5">Учительские лайфхаки</a></li>
+        </ul>
+      </div>
       <nav class="header_navbar navbar">
         <ul class="navbar_container">
           <li class="navbar_item active " data-index-number="0">Главная</li>
@@ -62,8 +76,8 @@
         <ul class="menu-items">
           <li class="menu-item"><a target="_blank" href="https://pravo.by/document/?guid=3871&p0=Hk1100243"
               class="menu-link">Кодекс об образовании</a></li>
-          <li class="menu-item"><a target="_blank"
-              href="https://drive.google.com/file/d/1s2cP72lOlkehFoKTSjuFgn5PJyZ4-_yH/view" class="menu-link">Санитарные
+          <li class="menu-item"><a target="_blank" href="https://pravo.by/document/?guid=12551&p0=W22543710p"
+              class="menu-link">Санитарные
               нормы и правила</a></li>
           <li class="menu-item"><a target="_blank"
               href="https://adu.by/ru/homeru/obrazovatelnyj-protsess/obshchee-srednee-obrazovanie/tipovye-uchebnye-plany-uchrezhdenij-obshchego-srednego-obrazovaniya.html"
@@ -96,33 +110,6 @@
     <section class="classroom_olimpiads olimpiads classroom_section">
       <img class="olimpiads_start-image" src="./images/olimpiads.png" alt="olimpiads">
       <div class="olimpiads_classes classes">
-        <!--<div class="classes_panel panel classes_active">
-          <h3 class="class_title">I КЛАСС</h3>
-          <div class="panel_dark">
-          </div>
-          <div class="panel_container">
-            <h3>I КЛАСС</h3>
-            <ul class="olimpiads_subjects">
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1UQHmRbbYf1uGUIeu3BDVYKUdTDtTFWH1?usp=drive_link" class="olimpiads_link">Математика</a></li>
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1f-IussmCa2Z1rjGqKqW7TuUJTYPNkFfh?usp=sharing" class="olimpiads_link">Русский язык</a></li>
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/13IPBHOhQQgVS15_f6VEQEgVp-G8XOVK8?usp=sharing" class="olimpiads_link">Человек и Мир</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="classes_panel panel">
-          <h3 class="class_title">II КЛАСС</h3>
-          <div class="panel_dark">
-          </div>
-          <div class="panel_container">
-            <h3>II КЛАСС</h3>
-            <ul class="olimpiads_subjects">
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1igQmLiXnkdUN8FTMkFcqQUpla_hOIVQd?usp=sharing" class="olimpiads_link">Математика</a></li>
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1Kh5OnlseoV1FVeOHH51Cb7bp_lhdoSg3?usp=sharing" class="olimpiads_link">Русский язык</a></li>
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1Gz9UwJEs3Og7ANpqW_tCzq8MqXkoWcB5?usp=sharing" class="olimpiads_link">Белорусская мова</a></li>
-              <li class="olimpiads_subject"><a target="_blank" href="https://drive.google.com/drive/folders/1H0bsU5TCUe1xy5e3L-qoW4IXA8FG6HfX?usp=sharing" class="olimpiads_link">Человек и Мир</a></li>
-            </ul>
-          </div>
-        </div>-->
         <div class="classes_panel panel classes_active">
           <h3 class="class_title">III КЛАСС</h3>
           <div class="panel_dark">
@@ -232,27 +219,34 @@
           </div>
         </div>
       </section>
-      <!--<div class="name_video">Звонкие и глухие согласные звуки. Их обозначение на письме буквами. Парные и непарные
-        звонкие и глухие согласные. Произношение и обозначение на письме парных звонких и глухих согласных на конце слов
-        и в середине слов перед глухими согласными</div>
-      <video class="video" width="797px" height="480px"
-        src="https://eior.by/upload/info-oso/belmova/4class/БМР04_0203.mp4" controls poster="./images/belarus.jpg"></video>
-      <button class="button"></button>-->
     </section>
     <section class="classroom_lifehacks lifehacks classroom_section">
-      <img src="./images/notebook.png" alt="notebook">
-      <ol class="lifehacks_list">
-        <li class="lifehacks_item"><a href="" class="lifehacks_links">Использования QR-кодов в обучении школьников</a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links">Паутинка ассоциаций, кластер, интеллект-карта</a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links">Шестерёнка - заведи урок.</a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-        <li class="lifehacks_item"><a href="" class="lifehacks_links"></a></li>
-      </ol>
+      <img class="lifehacks_start-image" src="./images/lifehacker.png" alt="lifehacks">
+      <div class="lifehacks_container">
+        <h3 class="lifehacks_title">полезные ссылки</h3>
+        <ol class="lifehacks_list">
+          <li class="lifehacks_item"><a target="_blank" href="https://hochuzna.blogspot.com/p/qr.html"
+              class="lifehacks_links">Использования QR-кодов в обучении школьников</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="http://klassnagizn.blogspot.com/2019/06/blog-post_10.html"
+              class="lifehacks_links">Интересная работа с текстом</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="http://klassnagizn.blogspot.com/2019/01/blog-post_26.html"
+              class="lifehacks_links">Шестерёнка - заведи урок.</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="http://klassnagizn.blogspot.com/2019/10/blog-post.html"
+              class="lifehacks_links">Проездной билет на математике</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="https://lubdetpis.blogspot.com/p/blog-page_37.html"
+              class="lifehacks_links">Паутинка ассоциаций, кластер, интеллект-карта</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="https://hochuzna.blogspot.com/p/blog-page_70.html"
+              class="lifehacks_links">Стратегии чтения: «Идеал», «Фишбоун», «Мозаика»</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="https://hochuzna.blogspot.com/p/2018.html" class="lifehacks_links">Банк
+              интерактивных приложений</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="http://kvestodel.ru/" class="lifehacks_links">Квестодел – конструктор
+              квестов</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="https://hochuzna.blogspot.com/p/blog-page_87.html" class="lifehacks_links">1
+              КЛАСС. Обучение письму. Бланки для отработки письма</a></li>
+          <li class="lifehacks_item"><a target="_blank" href="https://hochuzna.blogspot.com/p/blog-page_1.html" class="lifehacks_links">2
+              КЛАСС. Математика. Таблица умножения – это легко</a></li>
+        </ol>
+      </div>
     </section>
     <section class="footer_container">
       <footer class="classroom_footer footer">

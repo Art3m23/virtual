@@ -64,8 +64,6 @@ address {
   font-style: normal;
 }
 
-/* Form */
-
 input,
 textarea,
 button,
@@ -111,6 +109,7 @@ legend {
 
 body {
   position: relative;
+  z-index: -1;
 }
 
 .start {
@@ -134,7 +133,7 @@ body {
 }
 
 .start_school-name {
-  width: 685px;
+  max-width: 685px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -144,6 +143,7 @@ body {
   font-size: 35px;
   color: #D04E43;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .start_text {
@@ -239,7 +239,7 @@ body {
 
 .line .pen {
   position: absolute;
-  top: 0;
+  top: -70px;
   left: 0;
   width: 25rem;
   height: 4rem;
@@ -457,20 +457,20 @@ body {
 
   60% {
     left: 100%;
-    -webkit-transform: translate(-8%, -310%) rotate(140deg);
-    transform: translate(-8%, -310%) rotate(140deg);
+    -webkit-transform: translate(-8%, -310%) rotate(110deg);
+    transform: translate(-8%, -310%) rotate(110deg);
   }
 
   90% {
     left: 0%;
-    -webkit-transform: translate(-8%, -310%) rotate(140deg);
-    transform: translate(-8%, -310%) rotate(140deg);
+    -webkit-transform: translate(-8%, -310%) rotate(110deg);
+    transform: translate(-8%, -310%) rotate(110deg);
   }
 
   95% {
     left: 0%;
-    -webkit-transform: translate(-8%, -450%) rotate(140deg);
-    transform: translate(-8%, -450%) rotate(140deg);
+    -webkit-transform: translate(-8%, -450%) rotate(110deg);
+    transform: translate(-8%, -450%) rotate(110deg);
   }
 
   100% {
@@ -500,20 +500,20 @@ body {
 
   60% {
     left: 100%;
-    -webkit-transform: translate(-8%, -310%) rotate(140deg);
-    transform: translate(-8%, -310%) rotate(140deg);
+    -webkit-transform: translate(-8%, -310%) rotate(110deg);
+    transform: translate(-8%, -310%) rotate(110deg);
   }
 
   90% {
     left: 0%;
-    -webkit-transform: translate(-8%, -310%) rotate(140deg);
-    transform: translate(-8%, -310%) rotate(140deg);
+    -webkit-transform: translate(-8%, -310%) rotate(110deg);
+    transform: translate(-8%, -310%) rotate(110deg);
   }
 
   95% {
     left: 0%;
-    -webkit-transform: translate(-8%, -450%) rotate(140deg);
-    transform: translate(-8%, -450%) rotate(140deg);
+    -webkit-transform: translate(-8%, -450%) rotate(110deg);
+    transform: translate(-8%, -450%) rotate(110deg);
   }
 
   100% {
@@ -537,7 +537,8 @@ body {
   display: none;
   width: 100%;
   max-width: 1920px;
-  height: calc(100vh - 318px);
+  height: 100%;
+  min-height: calc(100vh - 318px);
   margin: 0 auto;
   padding: 10px;
 }
@@ -608,11 +609,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  width: 100%;
-  max-width: 1920px;
+}
+
+.classroom_title-text {
+  padding-top: 50px;
   height: 600px;
-  margin: 0 auto;
 }
 
 .title_text {
@@ -627,12 +628,28 @@ body {
   text-transform: uppercase;
 }
 
+.classroom_title:nth-child(2) {
+  margin-left: 140px;
+}
+
+.classroom_title:nth-child(3) {
+  margin-left: 280px;
+}
+
+.classroom_title:last-child {
+  margin-left: 420px;
+}
+
 .classroom_start-image {
   position: absolute;
   top: 0;
   right: 0;
   width: 960px;
   height: 790px;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .standards-menu {
@@ -649,10 +666,16 @@ body {
 }
 
 .menu-item {
-  padding-left: 35px;
+  padding: 10px 40px 0;
   background-image: url(./images/documents.svg);
   background-position: left center;
   background-repeat: no-repeat;
+  background-size: 35px;
+  height: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-item:hover .menu-link {
@@ -678,8 +701,9 @@ body {
 
 .olimpiads_classes {
   display: flex;
+  height: 100%;
+  min-height: 600px;
   width: 750px;
-  margin-left: 200px;
 }
 
 .classes_panel {
@@ -979,7 +1003,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  font-weight: 700;
   line-height: 1;
   text-decoration: none;
   text-align: center;
@@ -997,20 +1020,54 @@ body {
   box-shadow: 0 0 40px 40px #e74c3c inset;
 }
 
-.lifehacks_list {
+.lifehacks {
+  padding-left: 100px;
+}
+
+.lifehacks_container {
+  width: 600px;
+  padding-top: 100px;
+  background-image: url(./images/notebook.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.lifehacks_start-image {
   position: absolute;
-  top: 72px;
-  left: 50px;
-  height: 460px;
-  font-family: "Marck Script", cursive;
-  font-weight: bold;
+  top: 0;
+  right: 0;
+  width: 960px;
+  height: 790px;
+  padding: 0 30px 50px;
+}
+
+.lifehacks_title {
+  width: 320px;
+  margin-left: 115px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.lifehacks_list {
+  height: 500px;
+  width: 450px;
+  padding-left: 115px;
+  font-family: "Playwrite NO", cursive;
+  font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .lifehacks_item {
+  padding-left: 5px;
   margin-left: 15px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .lifehacks_links {
@@ -1021,36 +1078,9 @@ body {
   color: #6666b4;
 }
 
-/*.name_video {
-  position: absolute;
-  top: 100px;
-  left: 160px;
-  width: 650px;
-  height: 360px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 28px;
-  letter-spacing: 2px;
-  color: #f1f1f1;
-  text-align: center;
-  text-transform: uppercase;
+.lifehacks_item:hover {
+  color: #6666b4;
 }
-
-.video {
-  position: absolute;
-  top: 48px;
-  right: 115px;
-  object-fit: cover;
-}
-
-.button {
-  width: 100px;
-  height: 50px;
-  background-image: url(./images/exit.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
 
 .footer_container {
   background-color: #ffe4a3;
@@ -1090,6 +1120,824 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #2f364f;
+}
+
+
+@media (max-width: 1800px) {
+  .navbar_item {
+    font-size: 12px;
+  }
+
+  .title_text {
+    width: 550px;
+    padding-left: 0;
+    font-size: 50px;
+  }
+
+  .classroom_title-text {
+    padding-top: 100px;
+  }
+
+  .classroom_start-image {
+    top: 60px;
+    width: 660px;
+    height: 580px;
+  }
+
+  .olimpiads_classes {
+    width: 550px;
+  }
+
+  .olimpiads_start-image {
+    top: 60px;
+    width: 760px;
+    height: 580px;
+  }
+
+  .line {
+    width: 20rem;
+  }
+
+  .line .pen {
+    top: -30px;
+    left: -40px;
+    width: 10rem;
+    height: 2rem;
+    -webkit-transform: translate(1%, -365%) rotate(-75deg);
+    transform: translate(1%, -365%) rotate(-75deg);
+  }
+
+  @-webkit-keyframes pen_move {
+    0% {
+      left: -40px;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    50% {
+      left: 80%;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    55% {
+      left: 80%;
+      -webkit-transform: translate(1%, -385%) rotate(-75deg);
+      transform: translate(1%, -385%) rotate(-75deg);
+    }
+
+    60% {
+      left: 80%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    90% {
+      left: 0%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    95% {
+      left: 0%;
+      -webkit-transform: translate(-8%, -450%) rotate(110deg);
+      transform: translate(-8%, -450%) rotate(110deg);
+    }
+
+    100% {
+      -webkit-transform: translate(1%, -365%) rotate(315deg);
+      transform: translate(1%, -365%) rotate(315deg);
+    }
+  }
+
+  @keyframes pen_move {
+    0% {
+      left: -40px;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    50% {
+      left: 80%;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    55% {
+      left: 80%;
+      -webkit-transform: translate(1%, -385%) rotate(-75deg);
+      transform: translate(1%, -385%) rotate(-75deg);
+    }
+
+    60% {
+      left: 80%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    90% {
+      left: -40px;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    95% {
+      left: -40px;
+      -webkit-transform: translate(-8%, -450%) rotate(110deg);
+      transform: translate(-8%, -450%) rotate(110deg);
+    }
+
+    100% {
+      -webkit-transform: translate(1%, -365%) rotate(315deg);
+      transform: translate(1%, -365%) rotate(315deg);
+    }
+  }
+
+  .line .pen .pen_top::before {
+    border-width: 1rem 2rem 1rem 0;
+  }
+
+  .line .pen .pen_top::after {
+    left: 0;
+  }
+
+  .text {
+    font-size: 1.2rem;
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+
+  .reaserches_container {
+    width: 700px;
+    padding: 60px 20px 20px 20px;
+  }
+
+  .reaserches_start-image {
+    width: 720px;
+    height: 540px;
+  }
+
+  .reaserches_files {
+    padding: 10px;
+  }
+
+  .files_item {
+    width: 140px;
+    height: 170px;
+    padding: 30px;
+    font-size: 8px;
+  }
+
+  .files_item::after {
+    left: 0;
+    width: 100%;
+    background-size: 60px;
+  }
+
+  .distance_block {
+    width: 280px;
+    height: 280px;
+  }
+
+  .block_title {
+    font-size: 18px;
+  }
+
+  .distance_block-r {
+    width: 260px;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .block_button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .lifehacks_start-image {
+    top: 60px;
+    width: 720px;
+    height: 540px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .navbar_item {
+    font-size: 10px;
+  }
+
+  .title_text {
+    width: 350px;
+    padding-left: 10px;
+    font-size: 30px;
+  }
+
+  .olimpiads_start-image {
+    top: 60px;
+    width: 660px;
+    height: 580px;
+  }
+
+  .footer_school-name {
+    font-size: 14px;
+  }
+
+  .contacts_icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .start_text {
+    font-size: 36px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .classroom_section {
+    height: 100%;
+    min-height: calc(100vh - 200px);
+  }
+
+  .classroom_footer,
+  .footer_contacts {
+    height: 80px;
+  }
+
+  .classroom_title:nth-child(2) {
+    margin-left: 100px;
+  }
+
+  .classroom_title:nth-child(3) {
+    margin-left: 200px;
+  }
+
+  .classroom_title:last-child {
+    margin-left: 300px;
+  }
+
+  .reaserches {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reaserches_start-image {
+    position: relative;
+    top: 0;
+    width: 960px;
+    height: 790px;
+  }
+
+  .reaserches_container {
+    width: 920px;
+    padding: 40px;
+  }
+
+  .reaserches_files {
+    padding: 10px;
+  }
+
+  .files_item {
+    width: 200px;
+    height: 220px;
+    padding: 30px;
+    font-size: 12px;
+  }
+
+  .files_item::after {
+    left: 10px;
+    width: 180px;
+    height: 100%;
+  }
+
+  .lifehacks {
+    padding-left: 20px;
+  }
+
+  .lifehacks_container {
+    width: 500px;
+  }
+
+  .lifehacks_start-image {
+
+    width: 660px;
+    height: 580px;
+  }
+
+  .lifehacks_title {
+    margin-left: 45px;
+  }
+  
+  .lifehacks_list {
+    width: 400px;
+    padding-left: 45px;
+  }
 
 }
 
+@media (max-width: 1250px) {
+  .start_school-name {
+    font-size: 25px;
+  }
+
+  .title_text {
+    width: 280px;
+    padding-left: 5px;
+    font-size: 32px;
+  }
+
+  .classroom_title-text {
+    height: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .classroom_title_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .classroom_start-image {
+    position: relative;
+    top: 0;
+    width: 560px;
+    height: 560px;
+  }
+
+  .classroom_olimpiads {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .classes_panel {
+    height: 600px;
+  }
+
+  .olimpiads_start-image {
+    top: 0;
+    position: relative;
+    width: 560px;
+    height: 560px;
+  }
+
+  .classroom_title:nth-child(2) {
+    margin-left: 100px;
+  }
+
+  .classroom_title:nth-child(3) {
+    margin-left: 200px;
+  }
+
+  .classroom_title:last-child {
+    margin-left: 300px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .header_navbar {
+    display: none;
+  }
+
+  #menu_toggle {
+    opacity: 0;
+  }
+
+  .menu_btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .menu_btn>span,
+  .menu_btn>span::before,
+  .menu_btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    z-index: 0;
+    background-color: #616161;
+    pointer-events: none;
+  }
+
+  .menu_btn>span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu_btn>span::after {
+    content: '';
+    top: 8px;
+  }
+
+
+  .menu_container {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    z-index: 1;
+    width: 300px;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ffe4a3;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition: all .3s linear;
+  }
+
+  .menu_item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  #menu_toggle:checked~.menu_btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu_toggle:checked~.menu_btn>span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+
+  #menu_toggle:checked~.menu_btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .standards-menu {
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .reaserches_container {
+    width: 700px;
+  }
+
+  .reaserches_start-image {
+    width: 720px;
+    height: 540px;
+  }
+
+  .reaserches_files {
+    padding: 10px;
+  }
+
+  .files_item {
+    width: 140px;
+    height: 170px;
+    padding: 30px;
+    font-size: 8px;
+  }
+
+  .files_item::after {
+    left: 0;
+    width: 100%;
+    background-size: 60px;
+  }
+
+  .distance_container {
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .distance_block {
+    justify-self: center;
+  }
+
+  .lifehacks {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .lifehacks_container {
+    margin-bottom: 50px;
+  }
+
+  .lifehacks_start-image {
+    top: 0;
+    position: relative;
+    width: 560px;
+    height: 560px;
+  }
+}
+
+@media (max-width: 900px) {
+  .start_text {
+    font-size: 30px;
+  }
+
+  .start_school-name {
+    font-size: 15px;
+  }
+
+  .start_button {
+    display: block;
+    width: 240px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .line {
+    width: 10rem;
+  }
+
+  .line .pen {
+    top: -15px;
+    left: -20px;
+    width: 5rem;
+    height: 1rem;
+    -webkit-transform: translate(1%, -365%) rotate(-75deg);
+    transform: translate(1%, -365%) rotate(-75deg);
+  }
+
+  .line .pen .pen_top::before {
+    border-width: .5rem 1rem .5rem 0;
+  }
+
+  .line .pen .pen_top::after {
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+  }
+
+  .text {
+    font-size: .8rem;
+  }
+
+  @-webkit-keyframes pen_move {
+    0% {
+      left: -20px;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    50% {
+      left: 80%;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    55% {
+      left: 80%;
+      -webkit-transform: translate(1%, -385%) rotate(-75deg);
+      transform: translate(1%, -385%) rotate(-75deg);
+    }
+
+    60% {
+      left: 80%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    90% {
+      left: 0%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    95% {
+      left: 0%;
+      -webkit-transform: translate(-8%, -450%) rotate(110deg);
+      transform: translate(-8%, -450%) rotate(110deg);
+    }
+
+    100% {
+      -webkit-transform: translate(1%, -365%) rotate(315deg);
+      transform: translate(1%, -365%) rotate(315deg);
+    }
+  }
+
+  @keyframes pen_move {
+    0% {
+      left: -20px;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    50% {
+      left: 80%;
+      -webkit-transform: translate(1%, -365%) rotate(-75deg);
+      transform: translate(1%, -365%) rotate(-75deg);
+    }
+
+    55% {
+      left: 80%;
+      -webkit-transform: translate(1%, -385%) rotate(-75deg);
+      transform: translate(1%, -385%) rotate(-75deg);
+    }
+
+    60% {
+      left: 80%;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    90% {
+      left: -20px;
+      -webkit-transform: translate(-8%, -310%) rotate(110deg);
+      transform: translate(-8%, -310%) rotate(110deg);
+    }
+
+    95% {
+      left: -20px;
+      -webkit-transform: translate(-8%, -450%) rotate(110deg);
+      transform: translate(-8%, -450%) rotate(110deg);
+    }
+
+    100% {
+      -webkit-transform: translate(1%, -365%) rotate(315deg);
+      transform: translate(1%, -365%) rotate(315deg);
+    }
+  }
+
+  .reaserches_container {
+    width: 500px;
+    padding: 25px;
+  }
+
+  .reaserches_start-image {
+    width: 720px;
+    height: 540px;
+  }
+
+  .reaserches_files {
+    padding: 10px;
+  }
+
+  .files_item {
+    width: 100px;
+    height: 125px;
+    padding: 30px;
+    font-size: 6px;
+  }
+
+  .files_item::after {
+    left: 0;
+    width: 100%;
+    background-size: 60px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .logo {
+    width: 60px;
+  }
+
+  .title_text {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  .classroom_start-image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .classroom_title:nth-child(2) {
+    margin-left: 60px;
+  }
+
+  .classroom_title:nth-child(3) {
+    margin-left: 120px;
+  }
+
+  .classroom_title:last-child {
+    margin-left: 180px;
+  }
+
+  .menu_btn {
+    top: 50px;
+    right: 30px;
+  }
+
+  .menu-link {
+    font-size: 14px;
+  }
+
+  .olimpiads_classes {
+    width: 280px;
+  }
+
+  .olimpiads_start-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .panel_container h3 {
+    font-size: 16px;
+  }
+
+  .olimpiads_link {
+    font-size: 14px;
+  }
+
+  .class_title {
+    font-size: 16px;
+  }
+
+  .reaserches_container {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 20px;
+    background-image: url(./images/board.png);
+  }
+
+  .reaserches_start-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .reaserches_files {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .files_item {
+    width: 75px;
+    height: 125px;
+    padding: 10px;
+    font-size: 5px;
+  }
+
+  .files_item::after {
+    left: 0;
+    width: 100%;
+    background-size: 60px;
+  }
+
+  .distance_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .distance_block {
+    margin: 10px;
+  }
+
+  .lifehacks_container {
+    width: 300px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  .lifehacks_start-image {
+    width: 280px;
+    height: 300px
+  }
+
+  .lifehacks_title {
+    width: 260px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .lifehacks_list {
+    width: 260px;
+    height: 300px;
+    padding-left: 20px;
+    font-size: 8px;
+  }
+
+  .classroom_footer {
+    padding-left: 0;
+  }
+
+  .footer_school-name {
+    font-size: 10px;
+  }
+
+  .footer_contacts {
+    padding: 10px;
+  }
+}
